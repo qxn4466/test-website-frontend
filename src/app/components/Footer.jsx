@@ -25,7 +25,7 @@ export default function Footer() {
           <ul className="space-y-2">
             <li>
               <Link href="/about" className="text-gray-300 hover:text-white transition">
-                About KVB
+                About ABC
               </Link>
             </li>
             <li>
@@ -47,27 +47,27 @@ export default function Footer() {
           <ul className="space-y-2">
             <li>
               <Link href="/products/hybrid-solar-tunnel-dryer" className="text-gray-300 hover:text-white transition">
-                Hybrid Solar Tunnel Dryer
+                Product 1
               </Link>
             </li>
             <li>
               <Link href="/products/scheffler-dish" className="text-gray-300 hover:text-white transition">
-                Scheffler Dish
+                Product 2
               </Link>
             </li>
             <li>
               <Link href="/products/parabolic-cooker" className="text-gray-300 hover:text-white transition">
-                Parabolic Cooker
+                Product 3
               </Link>
             </li>
             <li>
               <Link href="/products/solar-concentrator" className="text-gray-300 hover:text-white transition">
-                Solar Concentrator
+                Product 4
               </Link>
             </li>
             <li>
               <Link href="/products/parabolic-trough" className="text-gray-300 hover:text-white transition">
-                Parabolic Trough
+                Product 5
               </Link>
             </li>
           </ul>
@@ -77,8 +77,8 @@ export default function Footer() {
         <div>
           <h3 className="font-semibold text-xl mb-4 text-gray-400">Get in touch</h3>
           <p className="text-gray-300 opacity-70 leading-relaxed">
-            R16, KSIDC, 3rd Cross Belur<br />
-            Industrial Estate Dharwad–580011.
+            <br />
+            Address 1
           </p>
 
           <div className="flex items-center gap-3 mt-4">
