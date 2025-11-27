@@ -1,65 +1,101 @@
-import Image from "next/image";
+  import Navbar from "./components/Navbar";
+  import TopBar from "./components/TopBar";
+  import ImageSlider from "./components/ImageSlider";
+  import Footer from "./components/Footer";
 
-export default function Home() {
-  return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
+  export default function Home() {
+    return (
+      <div>
+        <TopBar />
+        <Navbar />
+
+        <main className="text-center mt-20 mb-20">
+          <h1 className="text-4xl font-bold text-green-700">
+            Welcome to Test Website
           </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+
+          {/* Image Slider */}
+          <div className="mt-10">
+            <ImageSlider />
+          </div>
+
+
+          {/* ======================================
+    ABOUT ABC SECTION
+  ====================================== */}
+  <section className="max-w-7xl mx-auto px-5 py-20">
+    
+    {/* Main Title */}
+    <h2 className="text-3xl md:text-4xl font-extrabold mb-6">
+      <span className="text-blue-700">ABOUT</span>{" "}
+      <span className="text-green-700">ABC</span>
+    </h2>
+
+    <div className="grid md:grid-cols-2 gap-12">
+      
+      {/* LEFT SIDE — Main paragraph */}
+  <p className="text-gray-700 leading-8 text-lg text-justify">
+    We pride ourselves on being at the forefront of autonomous aerial intelligence, 
+    delivering mission-critical Drone AI systems that think, decide, and operate without human intervention. 
+    Founded on the belief that true autonomy is the future of unmanned aviation, we provide complete 
+    end-to-end solutions — from groundbreaking research and in-house hardware-software development 
+    to tailored integration, regulatory compliance, deployment, and lifelong fleet support. 
+    With relentless focus on real-world performance, we harness the latest advances in computer vision, 
+    edge AI, sensor fusion, and swarm intelligence to empower defense forces, public safety agencies, 
+    energy operators, and precision industries with drones that are safer, smarter, and fully independent — today.
+  </p>
+
+      {/* RIGHT SIDE — 4 benefit items */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
+
+        {/* Item 1 */}
+        <div>
+          <div className="text-green-600 text-4xl mb-2">👥</div>
+          <h3 className="font-semibold text-gray-900 text-lg">Customer Satisfaction</h3>
+          <p className="text-gray-600 leading-7 text-lg text-justify">
+            We strive to exceed our customers’ expectations on every mission, delivering reliable, 
+            autonomous drone systems that perform flawlessly when lives, assets, or critical operations are on the line.
           </p>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+
+        {/* Item 2 */}
+        <div>
+          <div className="text-green-600 text-4xl mb-2">💡</div>
+          <h3 className="font-semibold text-gray-900 text-lg">Continuous Innovations</h3>
+          <p className="text-gray-600 leading-7 text-lg text-justify">
+            We never stop pushing the boundaries of AI and robotics — constantly developing next-generation computer vision, 
+            edge AI, swarm intelligence, and GPS-denied autonomy to keep our clients years ahead of the competition.
+          </p>
         </div>
-      </main>
+
+        {/* Item 3 */}
+        <div>
+          <div className="text-green-600 text-4xl mb-2">🛡️</div>
+          <h3 className="font-semibold text-gray-900 text-lg">Integrity</h3>
+          <p className="text-gray-600 leading-7 text-lg text-justify">
+            We prioritize safety, data security, and regulatory compliance above all. 
+            Every system we build adheres to the highest aviation, cybersecurity, and 
+            ethical AI standards with full transparency and robust redundancy.
+          </p>
+        </div>
+
+        {/* Item 4 */}
+        <div>
+          <div className="text-green-600 text-4xl mb-2">🎯</div>
+          <h3 className="font-semibold text-gray-900 text-lg">Passion for Excellence</h3>
+          <p className="text-gray-600 leading-7 text-lg text-justify">
+            We are obsessed with perfection in flight. From the first line of code to the final mission 
+            handover, we are driven to deliver the world’s most capable, intelligent drones that surpass 
+            expectations every single time.
+          </p>
+        </div>
+
+      </div>
     </div>
-  );
-}
+  </section>
+
+
+        </main>
+      </div>
+    );
+  }
