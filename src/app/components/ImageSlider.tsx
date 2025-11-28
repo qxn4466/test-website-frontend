@@ -7,7 +7,7 @@
       const images = [
         { src: "/images/Drone.AI.jpg", caption: "AI Powered Drone" },
         { src: "/images/Drone.AI1.jpg", caption: "AI Powered Drone" },
-        { src: "/images/UAV.jpg", caption: "AI Powered UAV Drone" },
+        { src: "/images/UAV.JPG", caption: "AI Powered UAV Drone" },
       ];
 
       const [index, setIndex] = useState(0);
@@ -78,8 +78,7 @@
                   {/* Left button */}
                   <button
                     onClick={prev}
-            className="absolute top-1/2 left-3 -translate-y-1/2 bg-black/40 text-white px-2 py-1 text-xl sm:px-3 sm:py-2 rounded-full hover:bg-black/60 z-40"
-          >
+            className="absolute top-1/2 left-3 -translate-y-1/2 bg-black/40 text-white px-2 py-1 text-xl sm:px-3 sm:py-2 rounded-full hover:bg-black/60 z-40">
             ‹
           </button>
 
