@@ -22,7 +22,7 @@ export default function AboutSection() {
 
           {/* Feature 1 */}
           <div>
-            <div className="text-green-600 text-4xl mb-2">👥</div>
+            <div className="text-black-600 text-4xl mb-2">👥</div>
             <h3 className="font-bold bg-gray-200 px-2 inline-block">Customer Satisfaction</h3>
             <p className="mt-2 bg-gray-100 p-3 shadow-sm rounded-md">
               We strive to exceed our customers’ expectations and ensure their complete satisfaction.
@@ -31,7 +31,7 @@ export default function AboutSection() {
 
           {/* Feature 2 */}
           <div>
-            <div className="text-green-600 text-4xl mb-2">💡</div>
+            <div className="text-black-600 text-4xl mb-2">💡</div>
             <h3 className="font-bold bg-gray-200 px-2 inline-block">Continuous Innovations</h3>
             <p className="mt-2 bg-gray-100 p-3 shadow-sm rounded-md">
               Exploring new technologies to deliver advanced and cutting-edge solutions for our clients.
@@ -40,7 +40,7 @@ export default function AboutSection() {
 
           {/* Feature 3 */}
           <div>
-            <div className="text-green-600 text-4xl mb-2">🧑‍💼</div>
+            <div className="text-black-600 text-4xl mb-2">🧑‍💼</div>
             <h3 className="font-bold bg-gray-200 px-2 inline-block">Integrity</h3>
             <p className="mt-2 bg-gray-100 p-3 shadow-sm rounded-md">
               We maintain strong data integrity through robust security measures and quality control.
@@ -49,7 +49,7 @@ export default function AboutSection() {
 
           {/* Feature 4 */}
           <div>
-            <div className="text-green-600 text-4xl mb-2">🎯</div>
+            <div className="text-black-600 text-4xl mb-2">🎯</div>
             <h3 className="font-bold bg-gray-200 px-2 inline-block">Passion for Excellence</h3>
             <p className="mt-2 bg-gray-100 p-3 shadow-sm rounded-md">
               We are committed to delivering exceptional hybrid solar solutions that exceed expectations.

@@ -16,7 +16,7 @@ export default function Footer() {
   const scrollToTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
 
   return (
-    <footer className="relative bg-[#062E26] text-white py-20 px-6">
+    <footer className="relative bg-[#1a1a1a] text-white py-20 px-6">
       <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-16">
         
         {/* Company */}
@@ -63,7 +63,7 @@ export default function Footer() {
 
           <div className="flex items-center gap-3 mt-4">
             <FaPhoneAlt />
-            <a href="tel:+91xxxxxxxxxx" className="text-gray-300 hover:text-green-300 transition">
+            <a href="tel:+91xxxxxxxxxx" className="text-gray-300 hover:text-gray-300 transition">
               +91xxxxxxxxxx
             </a>
           </div>
@@ -112,7 +112,7 @@ export default function Footer() {
       {showButton && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-8 right-8 bg-white text-black p-3 rounded-full shadow-lg hover:bg-green-300 transition"
+          className="fixed bottom-8 right-8 bg-white text-black p-3 rounded-full shadow-lg hover:bg-blue-300 transition"
           aria-label="Scroll to top"
         >
           ↑
